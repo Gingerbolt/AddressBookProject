@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Book</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Contact List:</h1>
+        {% if contacts is not empty %}
+            <p>Your Contacts So Far:</p>
+            <ul>
+                {% for contact in contacts %}
+                    <li>Name: <strong> {{ contact.getName }} </strong></li>
+                    <li>Phone:<em> {{ contact.getPhoneNumber }} </em></li>
+                    <li>Address: {{ contact.getAddress }} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+  <form action='/create_contact' method="post">
+      <label for='name'>New Contact Name</label>
+      <input id='name' name='name' type='text'>
+      <label for='phone_number'>New Contact Phone #</label>
+      <input id='phone_number' name='phone_number' type='text'>
+      <label for='address'>New Contact Address</label>
+      <input id='address' name='address' type='text'>
+      <button type='submit' class='btn-info'>Add Contact</button>
+  </form>
+  <form action='/delete_contacts' method='post'>
+      <button type='submit' class='btn-danger'>delete</button>
+  </form>
+</body>
+</html>

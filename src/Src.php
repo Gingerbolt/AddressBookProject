@@ -1,33 +1,45 @@
 <?php
-class Object
+class Contact
     {
-      private $property1;
-      private $property2;
-      private $property3;
+      private $name;
+      private $phone_number;
+      private $address;
       lower snake case on var names
-      function __construct($property1, $property2)
+      function __construct($name, $phone_number, $address)
         {
-            $this->property1 = $property1;
-            $this->property2 = $property2;
-            $this->property3;
+            $this->name = $name;
+            $this->phone_number = $phone_number;
+            $this->address = $address;
         }
 
-    function getPropertyOne() {
-        return $this->property1;
+    function getName() {
+        return $this->name;
     }
-    function getPropertyTwo() {
-        return $this->property2;
+    function getPhoneNumber() {
+        return $this->phone_number;
+    }
+    function getAddress() {
+        return $this->address;
+    }
+    function setName($new_name) {
+        $this->name = (string) $new_name;
+    }
+    function setPhoneNumber($new_number) {
+        $this->phone_number = $new_number;
+    }
+    function setAddress($new_address) {
+        $this->address = $new_address;
     }
     static function getAll() {
-        return $_SESSION['property_list'];
+        return $_SESSION['contact_list'];
     }
     function save()
     {
-        array_push($_SESSION['property_list'], $this);
+        array_push($_SESSION['contact_list'], $this);
     }
     static function deleteAll()
     {
-        return $_SESSION['property_list'] = array();
+        return $_SESSION['contact_list'] = array();
     }
     }
 ?>

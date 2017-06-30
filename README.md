@@ -10,10 +10,11 @@ _{A contact book program}_
 
 ## Setup/Installation Requirements
 1. Download repository from github page with git clone
-2. Launch command prompt and execute "$ composer install" from project home folder to download requisite dependencies
-3. Navigate to the web folder and execute php -S localhost:8000 to initialize local server
-4. Navigate to localhost:8000 in your preferred browsing program
-5. Enjoy the Address Book program.
+2. Ensure you have composer and MAMP installed
+3. Launch command prompt and execute "$ composer install" from project home folder to download requisite dependencies
+4. Navigate to the web folder and execute php -S localhost:8000 to initialize local server
+5. Navigate to localhost:8000 in your preferred browsing program
+6. Enjoy the Address Book program.
 
 _{Project can be located at: <a href=https://github.com/Gingerbolt/AddressBookProject> Steve's github</a>}_
 

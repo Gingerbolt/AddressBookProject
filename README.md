@@ -13,7 +13,7 @@ _{A contact book program}_
 2. Ensure you have composer and MAMP installed
 3. Launch command prompt and execute "$ composer install" from project home folder to download requisite dependencies
 4. Start MAMP local server
-5. Navigate to the AddressBookProject/web folder in command prompt and execute php -S localhost:8000 to initialize the local server
+5. Navigate to the AddressBookProject/web folder in command prompt and execute "$ php -S localhost:8000" to initialize the local server
 6. Navigate to localhost:8000 in your preferred browsing program
 7. Enjoy your new address book
 

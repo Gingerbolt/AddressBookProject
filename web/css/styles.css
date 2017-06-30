@@ -1,0 +1,24 @@
+.container {
+    text-align: center;
+}
+.inputforms {
+    text-align: center;
+    color: silver;
+}
+#landing {
+    background-image: url("../img/leather.jpg");
+}
+.newperson {
+    background-image: url("../img/blueblast.jpg");
+    background-size: 100%;
+}
+#beach {
+
+}
+#party {
+    background-image: url("../img/partyhands.jpg");
+    background-size: 100%;
+}
+#newreturn {
+    background-color: black;
+}

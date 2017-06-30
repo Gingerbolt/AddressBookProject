@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Book</title>
+</head>
+<body>
+    <div class="container">
+    <h2> Welcome to your new address book! </h2>
+    <h3> To get started filling it up use the entry fields below: </h3>
+    </div>
+  <form action='/create_contact' method="post">
+      <label for='name'>New Contact Name</label>
+      <input id='name' name='name' type='text'>
+      <label for='phone_number'>New Contact Phone #</label>
+      <input id='phone_number' name='phone_number' type='text'>
+      <label for='address'>New Contact Address</label>
+      <input id='address' name='address' type='text'>
+      <button type='submit' class='btn-info'>Add Contact</button>
+  </form>
+</body>
+</html>

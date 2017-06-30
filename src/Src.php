@@ -4,7 +4,7 @@ class Contact
       private $name;
       private $phone_number;
       private $address;
-      lower snake case on var names
+      
       function __construct($name, $phone_number, $address)
         {
             $this->name = $name;

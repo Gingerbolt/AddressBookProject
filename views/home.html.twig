@@ -5,31 +5,34 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Address Book</title>
 </head>
-<body>
+<body id="mainback">
     <div class="container">
-        <h1>Your Contact List:</h1>
+        <div class="jumbotron" id="cherrymaster">
+        <h2>Your Contact List:</h2>
+        </div>
         {% if contacts is not empty %}
-            <p>Your Contacts So Far:</p>
-            <ul>
-                {% for contact in contacts %}
-                    <li>Name: <strong> {{ contact.getName }} </strong></li>
-                    <li>Phone:<em> {{ contact.getPhoneNumber }} </em></li>
-                    <li>Address: {{ contact.getAddress }} </li>
-                {% endfor %}
-            </ul>
+            {% for contact in contacts %}
+                <div class="contactlistprint"
+                    Name: <strong> {{ contact.getName }} </strong> <br>
+                    Phone:<em> {{ contact.getPhoneNumber }} </em> <br>
+                    Address: {{ contact.getAddress }} <br>
+                </div>
+            {% endfor %}
         {% endif %}
-      <form action='/create_contact' method="post">
-          <label for='name'>New Contact Name</label>
-          <input id='name' name='name' type='text'>
-          <label for='phone_number'>New Contact Phone #</label>
-          <input id='phone_number' name='phone_number' type='text'>
-          <label for='address'>New Contact Address</label>
-          <input id='address' name='address' type='text'>
-          <button type='submit' class='btn-info'>Add Contact</button>
-      </form>
-      <form action='/delete_contacts' method='post'>
-          <button type='submit' class='btn-danger'>Delete</button>
-      </form>
+        <div class="newentry">
+          <form action='/create_contact' method="post">
+              <label for='name'>New Contact Name</label>
+              <input id='name' name='name' type='text'>
+              <label for='phone_number'>New Contact Phone #</label>
+              <input id='phone_number' name='phone_number' type='text'>
+              <label for='address'>New Contact Address</label>
+              <input id='address' name='address' type='text'>
+              <button type='submit' class='btn-info'>Add Contact</button>
+          </form>
+          <form action='/delete_contacts' method='post'>
+              <button type='submit' class='btn-danger'>Delete</button>
+          </form>
+      </div>
   </div>
 </body>
 </html>

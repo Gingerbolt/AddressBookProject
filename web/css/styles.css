@@ -5,15 +5,29 @@
     text-align: center;
     color: silver;
 }
-#landing {
-    background-image: url("../img/leather.jpg");
-}
 .newperson {
     background-image: url("../img/blueblast.jpg");
     background-size: 100%;
 }
+.contactlistprint {
+    background-image: url("../img/cb.jpg");
+    background-size: 100%;
+    color: brown;
+}
+.newentry {
+    background-image: url("../img/bnatural.jpg");
+    background-size: 100%;
+}
 #beach {
-
+    background-image: url("../img/island.png");
+    background-size: 100%;
+}
+#cherrymaster {
+    background-image: url("../img/cbranch.jpg");
+    background-size: 1
+}
+#landing {
+    background-image: url("../img/leather.jpg");
 }
 #party {
     background-image: url("../img/partyhands.jpg");
@@ -21,4 +35,16 @@
 }
 #newreturn {
     background-color: black;
+}
+#deletereturn {
+    background-color: black;
+}
+#mainback{
+    background-image: url("../img/Bamboo.jpg");
+    background-size: 100%;
+}
+#cleared {
+    background-image: url("../img/cleared.jpg");
+    background-size: 100%;
+
 }

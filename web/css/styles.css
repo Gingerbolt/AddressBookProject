@@ -1,20 +1,20 @@
 .container {
     text-align: center;
 }
-.inputforms {
+.inputForms {
     text-align: center;
     color: silver;
 }
-.newperson {
+.newPerson {
     background-image: url("../img/blueblast.jpg");
     background-size: 100%;
 }
-.contactlistprint {
+.contactListPrint {
     background-image: url("../img/cb.jpg");
     background-size: 100%;
     color: brown;
 }
-.newentry {
+.newEntry {
     background-image: url("../img/bnatural.jpg");
     background-size: 100%;
 }
@@ -22,7 +22,7 @@
     background-image: url("../img/island.png");
     background-size: 100%;
 }
-#cherrymaster {
+#cherryMaster {
     background-image: url("../img/cbranch.jpg");
     background-size: 1
 }
@@ -33,13 +33,13 @@
     background-image: url("../img/partyhands.jpg");
     background-size: 100%;
 }
-#newreturn {
+#newReturn {
     background-color: black;
 }
-#deletereturn {
+#deleteReturn {
     background-color: black;
 }
-#mainback{
+#mainBack{
     background-image: url("../img/Bamboo.jpg");
     background-size: 100%;
 }

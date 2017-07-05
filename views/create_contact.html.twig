@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Contact Creation Successful!</title>
-</head>
-<body id="party">
+  </head>
+  <body id="party">
     <div class="container">
-        <div class="newperson">
-            <h1>New Friend Added!</h1>
-            <li>Name: <strong> {{ newcontact.getName }} </strong></li>
-            <li>Phone:<em> {{ newcontact.getPhoneNumber }} </em></li>
-            <li>Address: {{ newcontact.getAddress }} </li>
-        </div>
-        <div id="newreturn">
+      <div class="newPerson">
+        <h1>New Friend Added!</h1>
+        <li>Name: <strong> {{ newcontact.getName }} </strong></li>
+        <li>Phone:<em> {{ newcontact.getPhoneNumber }} </em></li>
+        <li>Address: {{ newcontact.getAddress }} </li>
+      </div>
+      <div id="newReturn">
         <a href='/home'>Click here to return to contacts!</a>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
